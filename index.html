@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>frequency-match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main" data-phase="1">
+        <h2 class="info">p0 (0s, 440Hz)</h2>
+
+        <div class="intro">
+            <h1>frequency-match 1.0</h1>
+            <p>hear a 2-second sound that changes frequency, then try to recreate it by manipulating a cubic bezier curve (move control points around); see how accurate you are</p>
+            <p>you can replay the target the sound and your own curve as many times as you want</p>
+            <p>good luck and have fun!</p>
+            <p>(if any bugs dm @worapan_limamonrat on instagram)</p>
+        </div>
+
+        <canvas></canvas>
+
+        <div class="button-container">
+            <div class="score-display">
+                <p class="score-label">score</p>
+                <p class="score-value">0.00 <span class="score-max">/ 10</span></p>
+            </div>
+            <button class="btn-hear">hear</button>
+            <button class="btn-create">create</button>
+            <button class="btn-done">done</button>
+            <div class="play-buttons">
+                <button class="btn-play-target">target</button>
+                <button class="btn-play-mine">mine</button>
+            </div>
+            <button class="btn-okay">okay</button>
+        </div>
+
+        <button class="btn-play">play</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
